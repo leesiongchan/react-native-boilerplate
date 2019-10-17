@@ -1,7 +1,7 @@
 import * as Localization from 'expo-localization';
 import i18n from 'i18next';
 
-import * as enUs from '@/locales/en-US';
+import enUs from '@/locales/en-US';
 
 const locale = Localization.locale;
 

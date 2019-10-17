@@ -1,3 +1,5 @@
 export default {
-  helloWorld: 'Hello World',
+  common: {
+    helloWorld: 'Hello World',
+  },
 };
