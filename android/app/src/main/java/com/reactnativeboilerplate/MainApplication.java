@@ -1,13 +1,8 @@
 package com.reactnativeboilerplate;
 
-import android.app.Application;
-import android.content.Context;
-
 import com.facebook.react.PackageList;
-import com.facebook.react.ReactApplication;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
-import com.facebook.soloader.SoLoader;
 
 import com.reactnativeboilerplate.generated.BasePackageList;
 
@@ -19,7 +14,6 @@ import org.unimodules.adapters.react.ModuleRegistryAdapter;
 import org.unimodules.adapters.react.ReactModuleRegistryProvider;
 import org.unimodules.core.interfaces.SingletonModule;
 
-// import java.lang.reflect.InvocationTargetException;
 import java.security.Security;
 import java.util.Arrays;
 import java.util.List;
@@ -47,9 +41,6 @@ public class MainApplication extends NavigationApplication {
     protected List<ReactPackage> getPackages() {
         @SuppressWarnings("UnnecessaryLocalVariable")
         List<ReactPackage> packages = new PackageList(this).getPackages();
-
-        // Packages that cannot be autolinked yet can be added manually here, for
-        // example:
 
         // Add unimodules
         List<ReactPackage> unimodules = Arrays.<ReactPackage>asList(
